@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Музыка - язык души</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <nav>
+		<ul>
+			<li><a href="#story">История</a></li>
+			<li><a href="#photos">Фото</a></li>
+			<li><a href="#skills">Навыки</a></li>
+			<li><a href="#requirements">Требования</a></li>
+			<li><a href="#links">Ссылки</a></li>
+		</ul>
+	</nav>
+	<header>
+		<h1>Музыка - язык души</h1>
+		<img src="perguitar.jpg" alt="A person playing the guitar with a sunset in the background">
+		<div class="logo">
+			<img src="music-logo.png" alt="Music logo">
+			<h2>Музыка</h2>
+		</div>
+	</header>
+
+	<nav>
+	</nav>
+
+	<main>
+		<section id="story">
+			<h2>История о музыке</h2>
+			<p>Музыка была частью человеческой культуры с незапамятных времен. Это универсальный язык, который преодолевает все барьеры и объединяет людей со всего мира. Будь то пение, игра на музыкальном инструменте или просто прослушивание музыки, это способно вызывать сильные эмоции и объединять людей.</p>
+			<p>Музыка развивалась на протяжении многих лет, появлялись различные жанры и изобретались новые инструменты. От классической музыки до рок-н-ролла, от хип-хопа до джаза - здесь найдется что-то для каждого. Музыка обладает силой вдохновлять, исцелять и изменять жизни.</p>
+		</section>
+        <section>
+        <h2>Photo Series</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="cello1.jpeg" style="width:100%; border-radius: 5%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="cello2.jpeg" style="width:100%; border-radius: 5%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="cello3.jpeg" style="width:100%; border-radius: 5%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="piano1.jpeg" style="width:100%; border-radius: 5%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="piano2.jpeg" style="width:100%; border-radius: 5%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="piano3.jpeg" style="width:100%; border-radius: 5%;">
+            </div>
+            <div class="mySlides fade">
+                <img src="Iam.JPG" style="width:100%; border-radius: 5%;">
+            </div>
+        </div>
+        
+        <br>
+        
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+        
+    
+        <script>
+    var slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Измените значение времени здесь, если нужно
+        }
+        </script>
+
+        </section>
+
+		<section id="skills">
+			<h2>Навыки, развитые человеком, занимающимся музыкой</h2>
+			<ol class="push">
+				<li>Дисциплина</li>
+				<li>Преданность</li>
+				<li>Практика</li>
+				<li>Координация рук и глаз</li>
+				<li>Мелкая моторика</li>
+				<li>Чтение музыки</li>
+				<li>Групповая работа</li>
+				<li>Коммуникация</li>
+				<li>Память</li>
+				<li>Изобретательность</li>
+				<li>Стрессоустойчивость</li>
+				<li>Выражение эмоций</li>
+            </ol>
+		</section>
+
+		<section id="requirements">
+			<h2>Требования к занятиям музыкой</h2>
+			<p>Чтобы заниматься музыкой, нужен инструмент или способ создания музыки, например компьютерная программа. Человеку необходимо овладеть базовыми знаниями в области теории музыки, научиться читать ноты по нотам и регулярно практиковаться. Кроме того, для некоторых жанров музыки требуется специальное оборудование или инструменты, такие как диджейский проигрыватель или микрофон. Также важно иметь поддерживающее сообщество, будь то учитель музыки, коллеги-музыканты или онлайн-форумы.</p>
+        </section>
+        <section id="links">
+            <h2>Ссылки на популярные музыкальные сайты</h2>
+            <ul class="rounded">
+                <li><a href="https://www.rollingstone.com/music/">Rolling Stone</a></li>
+                <li><a href="https://www.billboard.com/music/">Billboard</a></li>
+                <li><a href="https://www.npr.org/music/">NPR Music</a></li>
+                <li><a href="https://www.pitchfork.com/">Pitchfork</a></li>
+                <li><a href="https://www.allmusic.com/">AllMusic</a></li>
+                <li><a href="https://www.musicradar.com/">MusicRadar</a></li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+</html>    
